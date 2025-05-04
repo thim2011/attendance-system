@@ -1,0 +1,506 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+.hide{
+  display: none !important;
+}
+/*Login 頁面*/
+
+.background-radial-gradient {
+    min-height: 100vh;
+      max-height: 170vh;
+    background-color: hsl(218, 41%, 15%);
+    background-image: radial-gradient(650px circle at 0% 0%,
+        hsl(218, 41%, 35%) 15%,
+        hsl(218, 15%, 55%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%),
+      radial-gradient(1250px circle at 100% 100%,
+        hsl(218, 41%, 45%) 15%,
+        hsl(218, 41%, 30%) 35%,
+        hsl(218, 41%, 20%) 75%,
+        hsl(218, 41%, 19%) 80%,
+        transparent 100%);
+  }
+  
+  #radius-shape-1 {
+    height: 220px;
+    width: 220px;
+    top: -60px;
+    left: -130px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  #radius-shape-2 {
+    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    bottom: -60px;
+    right: -110px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(#44006b, #ad1fff);
+    overflow: hidden;
+  }
+
+  .bg-glass {
+    background-color: hsla(0, 0%, 100%, 0.9) !important;
+    backdrop-filter: saturate(200%) blur(25px);
+  }
+
+  nav{
+    background-color:var(--background-color);
+    color: var(--text-color);
+  }
+  #logout-bg{
+    background-color: var(--div-header);
+    color: var(--text-color);
+  }
+/*Login -----------------------------頁面*/
+body{
+  font-size: 16px;
+  --element-color: #f8f9fa;
+  --div-header:#FAFAFA;
+  --background-color: hsl(218, 60%, 70%);
+  --text-color : black;
+  --hover-color: #f5f5f5;
+  --nav-color: #f5f5f5;
+  --dropdown-color: #f5f5f5;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+body.dark{
+  --background-color:#16191F;
+  --element-color:#2A2E33;
+  --div-header:#21252C;
+  --text-color : white;
+  --hover-color:#2d2c2d;
+ --nav-color: #21252C;
+
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.div-header{
+  border-bottom: 1px solid #ccc;
+  background-color: var(--div-header);
+  color: var(--text-color);
+}
+nav{
+  background-color: var(--nav-color) !important;
+  color: var(--text-color) !important;
+}
+
+p, span, h1, h2, h3, h4, h5, h6, td, th, a, label, i{
+  color: var(--text-color) !important;
+
+}
+.card, .alert{
+  background-color: var(--element-color);
+  color: var(--text-color);
+}
+td, th, a,p, select, label{
+  font-size: 17px !important;
+}
+.chatbot-body {
+  background-color: var( --background-color);
+}
+.chat.incoming p {
+  background-color: var(--element-color);
+  color: var(--text-color);
+}
+.chatbot .chatbot-footer{
+  background-color: var(--element-color);
+}
+
+.chatbot-footer textarea{
+  background-color: var(--element-color);
+  color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 4px;  
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #757575;  
+  border-radius: 6px;  
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #888;  /
+}
+/*switch themes-------------------------------------*/
+.switch-themes {
+  width: 40px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #979595;
+}
+.switch-themes label{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #d0cdcd;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 1;
+  border: solid 1px #979595;
+}
+
+.switch-themes input:checked + label{
+  margin-left: 40px;
+  transform: translateX(-100%);
+}
+.switch-themes input:checked + label{
+  background-color: #368de3;
+}
+
+.modal-content{
+  background-color: var(--element-color);
+}
+/* Index Circle-------------------------------------*/
+.circle-container {
+  display: inline-block;
+  text-align: center;
+  margin: 0 15px;
+}
+
+.circle {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#circle {
+  background: conic-gradient(green 20% 100%, #e0e0e0 20%);
+}
+
+
+.circle-inner {
+  width: 50px;
+  height: 50px;
+  background-color: var(--element-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle-inner span {
+  font-size: 16px;
+  font-weight: bold;
+}
+/*switch themes-------------------------------------*/
+#ground-clock{
+
+}
+  #clock{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .number{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #1E90FF !important;
+  }
+  /*-------------------------------------*/
+   .sidebar{
+    min-width: 210px;
+    max-width: 210px;
+    min-height: auto;
+    transition: all 0.3s;
+    z-index: 100;
+    background-color:var(--element-color);
+    color: var(--text-color);
+   }
+
+   .content{
+      min-height: 100vh;
+      width: 100%;
+   }
+  
+   /*-------------------------------------*/
+   hr.h-color{
+     background: #eee;
+   }
+   
+   .sidebar li.active{
+      background: rgb(54, 88, 182);
+      border-radius: 8px;
+   }
+   
+   .sidebar li.active a, .sidebar li.active a:hover {
+    color: white !important;
+   }
+   .sidebar li a{
+    color: black;
+   }
+
+   @media(max-width: 992px){
+    .sidebar{
+      margin-left: -250px;
+      position: absolute;
+      min-height: 100vh;
+      z-index: 1;
+   
+    }
+
+    .sidebar.active{
+      margin-left: 0;
+     }
+   }
+
+   .aluxubu{
+    background-color: var(--element-color) ;
+    color: var(--text-color);
+    min-height: 150px;
+    text-align: center;
+    transition: all 0.3s;
+   }
+
+   .aluxubu2{
+    background-color:var(--element-color) ;
+    color: var(--text-color);
+    min-height: 120px;
+    transition: all 0.3s;
+    text-align: center;
+   }
+   .small-record{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+  
+   /* ---------TABLEEEEE-------------------------------------------------------------------- */
+   .table>:not(caption)>*>* {
+      background-color: transparent !important;
+    }
+
+    table thead{
+      background-color: #166F8C !important;
+    }
+    table th{
+      color: var(--text-color) !important;
+      font-weight: bold;
+    }
+   #LeaveVerify table td, #PersonalTable table td,
+    #todayRecord table td, #todayLeave table td, 
+    #PersonalLeave table td{
+    padding: 15px 4px !important;
+    text-align: center;
+   }
+   #LeaveVerify table th, #PersonalTable table th,
+   #todayRecord table th, #todayLeave table th, 
+   #PersonalLeave table th{
+   padding: 15px 4px !important;
+   text-align: center;
+  }
+   /*Table 美觀*/
+   .detail_span {
+    min-width: 60px !important;
+    display: inline-block; 
+  }
+  .main-row:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+  }
+  .detail-row {
+    background-color: var(--nav-color) !important;
+    color: var(--text-color) !important;
+    border-left: 5px solid #007bff; 
+    display: none;
+    transition: all 0.5s;
+    width: 100%;
+  }
+
+  .detail-container {
+    background-color: var(--nav-color) !important;
+    color: var(--text-color) !important;  
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+  }
+
+.detail-summary {
+flex: 1;
+padding-right: 10px;
+border-right: 2px solid #ddd;
+}
+
+.detail-info {
+flex: 2;
+padding-left: 10px;
+}
+
+@media screen and (max-width: 568px) {
+  .aluxubu {
+      width: 100%;
+  }
+
+}
+
+
+   /* 載入頁面的小圓圈----------------------------------- */
+   .spinner-bg{
+    z-index: 999;
+    position: fixed;
+    background-color: black;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+   }
+   .spinner {
+    width: 50px;
+    height: 50px;
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+
+/* ----------------------------------------------------------------------------- */
+.PersonalInfo {
+  text-align: left;
+}
+.PersonalInfo p{
+  min-width: 100px;
+}
+.PersonalInfo span{
+  min-width: 100px;
+}
+.inputcustom{
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.selectcustom{
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.width100{
+  width: 125px !important;
+}
+/* ---------行事曆-------------------------------------------------------------------- */
+#calendar {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 500px;
+}
+
+#calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.day-names, #days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.day-names div, #days div {
+  padding: 10px;
+  text-align: center;
+}
+
+#days div {
+  border: 1px solid #ccc;
+  margin: -1px 0 0 -1px;
+}
+#days div:hover{
+  background-color: #f0f0f0;
+}
+#month-year {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+#info{
+  min-width:340px;
+  padding: 20px;
+  border: 1px solid #3CB371;
+  background-color: #45BB89; 
+}
+#info-div{
+  color: white;
+  font-weight: bold;  
+}
+.square {
+  height: 17px;
+  width: 17px;
+  border: 1px solid #979595;
+}
+.square span{
+    font-size: 6px;
+    color: var(--text-color) !important;
+}
+
+  @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+   
+/* NOtification---------------------------------*/
+  .alert:hover{
+    background: #b6b6b7;
+  }
+  .NotificationBox {
+    display: none;
+    position: fixed;
+    background-color: var(--element-color);
+    top: 40px;
+    right: 10px;
+    width: 380px;
+    height: 450px;
+    padding:5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    z-index: 1100;
+}
+.NotifiNav {
+  background-color: var(--element-color);
+  position: relative
+}
+
+#nav_noti_count {
+  width: 12px;
+  height: 14px;
+  display: block; 
+  background-color: rgb(245, 70, 70);
+  border-radius: 40%;
+  position: absolute; 
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
