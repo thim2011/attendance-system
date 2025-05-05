@@ -22,7 +22,10 @@
 ![Login Page](images/login_page.png)
 
 ### 📝 首頁打卡 主題顔色
-![Login Page](images/light_theme.png)
+![Home_Page](images/light_theme.png)
+
+### 📝 首頁打卡 dark主題
+![Home_Page](images/dark_theme.png)
 
 ### 📊 出勤報表頁面
 ![Attendance Report](images/export_excel.png)
