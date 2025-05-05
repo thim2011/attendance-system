@@ -39,7 +39,7 @@
 ### DAL 資料層 
 ![DAL](images/dal_example.png)
 
-### BLL 資料層 
+### BLL 邏輯層
 ![BLL](images/bll_example.png)
 
 ---
